@@ -1,11 +1,11 @@
 <script setup lang="ts">
-const route = useRoute()
+const route = useRoute();
+const example = useExample();
 </script>
 
 <template>
-  <div>
-    <h1>Nuxt Routing set up successfully!</h1>
-    <p>Current route: {{ route.path }}</p>
-    <a href="https://nuxt.com/docs/getting-started/routing" target="_blank">Learn more about Nuxt Routing</a>
-  </div>
+  <!-- more like use-client on react -->
+  <ClientOnly fallback-tag="span" fallback="Loading...">
+    <pre>{{ JSON.stringify(example.config.app, null, 2) }}</pre>
+  </ClientOnly>
 </template>
