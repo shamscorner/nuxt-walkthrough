@@ -1,4 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Learning Nuxt for my side projects | Nuxt walkthrough
+
+I am teaching myself on public with this repository. I have a youtube channel [shamscorner](https://www.youtube.com/@shamscorner) where I try to post in daily basis. You can relax, have a coffee, and study with me alongside some loffi musics.
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
