@@ -1,20 +1,11 @@
 <script setup lang="ts">
-import { Example } from "#components";
-
-const BaseFooButton = resolveComponent("BaseFooButton");
-
-const clickable = ref(false);
-
-function toggleClickable() {
-  clickable.value = !clickable.value;
-}
+const show = ref(false);
 </script>
 
 <template>
-  <!-- dynamic components -->
-  <component :is="Example" />
-  <component
-    :is="clickable ? BaseFooButton : 'input'"
-    @click="toggleClickable"
-  />
+  <div>
+    <h1>Mountains</h1>
+    <LazyMountainsList v-if="show" />
+    <button v-if="!show" @click="show = true">Show List</button>
+  </div>
 </template>
