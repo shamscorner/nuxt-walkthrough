@@ -1,11 +1,9 @@
 <script setup lang="ts">
-const show = ref(false);
+const runtimeConfig = useRuntimeConfig();
 </script>
 
 <template>
   <div>
-    <h1>Mountains</h1>
-    <LazyMountainsList v-if="show" />
-    <button v-if="!show" @click="show = true">Show List</button>
+    {{ runtimeConfig.public.apiBase }}
   </div>
 </template>
