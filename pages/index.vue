@@ -4,5 +4,5 @@ const route = useRoute();
 
 <template>
   <!-- <Example /> -->
-  <SomethingElseButton />
+  <BaseFooButton />
 </template>
