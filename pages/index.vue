@@ -3,5 +3,6 @@ const route = useRoute();
 </script>
 
 <template>
-  <Example />
+  <!-- <Example /> -->
+  <BaseFooButton />
 </template>
